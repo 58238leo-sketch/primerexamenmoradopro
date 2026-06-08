@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Area de un Triangulo</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* DISEÑO GENERAL DE LA VENTANA */
+QDialog, QMainWindow {
+    background-color: #1e222b; /* Fondo oscuro elegante */
+    color: #ffffff;            /* Texto blanco */
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* DISEÑO DE LOS CUADROS DE TEXTO (Inputs) */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #282c34; /* Gris más claro que el fondo */
+    color: #ffffff;
+    border: 2px solid #3f4451;  /* Borde sutil */
+    border-radius: 6px;        /* Bordes redondeados */
+    padding: 6px 10px;
+    selection-background-color: #4b90ff;
+}
+
+/* Cuando el usuario hace clic para escribir en el cuadro de texto */
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border: 2px solid #4b90ff; /* El borde cambia a azul brillante */
+    background-color: #2c313c;
+}
+
+/* DISEÑO DE LAS ETIQUETAS DE TEXTO (Labels) */
+QLabel {
+    color: #abb2bf; /* Color gris claro/plateado para que no canse la vista */
+    font-weight: 500;
+}
+
+/* DISEÑO DEL BOTÓN CALCULAR */
+QPushButton {
+    background-gradient: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4b90ff, stop:1 #2766cc);
+    background-color: #4b90ff; /* Azul base */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;        /* Botón redondeado */
+    padding: 10px 20px;
+    min-height: 20px;
+}
+
+/* Cuando el usuario pasa el mouse sobre el botón */
+QPushButton:hover {
+    background-color: #619eff; /* Se vuelve un azul más vivo */
+    cursor: pointer;
+}
+
+/* Cuando el usuario presiona el botón */
+QPushButton:pressed {
+    background-color: #1f54a8; /* Se oscurece un poco al hundirse */
+    padding-top: 11px;         /* Efecto visual de click */
+    padding-bottom: 9px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ingrese la base</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ingrese la altura</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_base">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_altura">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>50</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_calcular">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>90</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_resultado">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>351</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
